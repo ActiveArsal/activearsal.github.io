@@ -47,14 +47,35 @@ body {
     .landing__header-text {
       font-size: 5.25rem;
       text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 75em) {
+        .landing__header-text {
+          font-size: 4rem; } }
     .landing__header-subtext {
+      margin-bottom: .5rem;
       font-size: 2.25rem;
       text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 75em) {
+        .landing__header-subtext {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .landing__header-subtext {
+          margin-bottom: .25rem; } }
     .landing__header-button {
+      font-size: 1.5rem;
       background: #fff;
       color: #000;
-      border-style: none;
       margin: 1rem;
       padding: 1.75rem 1.5rem;
-      font-size: 1.5rem;
-      border-radius: 25px; }
+      border-style: none;
+      border-radius: 25px;
+      box-shadow: var(--shadow-dark);
+      transition: all .15s; }
+      @media only screen and (max-width: 68.75em) {
+        .landing__header-button {
+          padding: 1.5rem 1.25rem; } }
+      .landing__header-button:hover {
+        transform: scale(1.05); }
+      .landing__header-button:active {
+        transform: translateY(2px) scale(1.05); }
+      .landing__header-button:focus {
+        outline: none; }

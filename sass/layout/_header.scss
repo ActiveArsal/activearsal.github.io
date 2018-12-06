@@ -20,29 +20,58 @@
 
         &-text {
             font-size: 5.25rem;
-            // text-shadow: var(--shadow-dark);
             text-shadow: 0px 4px 3px rgba(0,0,0,.4),
                         0px 8px 13px rgba(0,0,0,.1),
                         0px 18px 23px rgba(0,0,0,.1);
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 4rem;
+            }
         }
 
         &-subtext {
+            margin-bottom: .5rem;
             font-size: 2.25rem;
-            // text-shadow: var(--shadow-dark);
             text-shadow: 0px 4px 3px rgba(0,0,0,.4),
                         0px 8px 13px rgba(0,0,0,.1);
 
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: .25rem;
+            }
 
         }
 
         &-button {
+            font-size: 1.5rem;
             background: #fff;
             color: #000;
-            border-style: none;
+
             margin: 1rem;
             padding: 1.75rem 1.5rem;
-            font-size: 1.5rem;
+            border-style: none;
             border-radius: 25px;
+            box-shadow: var(--shadow-dark);
+            transition: all .15s;
+
+            @media only screen and (max-width: $bp-large) {
+                padding: 1.5rem 1.25rem;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &:active {
+                transform: translateY(2px) scale(1.05);
+            }
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 }
