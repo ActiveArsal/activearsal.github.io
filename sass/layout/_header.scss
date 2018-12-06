@@ -10,6 +10,7 @@
     position: relative;
 
     &__header {
+        width: 75%;
         color: var(--color-grey-light-2);
         position: absolute;
         top: 50%;
@@ -27,20 +28,29 @@
             @media only screen and (max-width: $bp-largest) {
                 font-size: 4rem;
             }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 3rem;
+            }
         }
 
         &-subtext {
-            margin-bottom: .5rem;
             font-size: 2.25rem;
             text-shadow: 0px 4px 3px rgba(0,0,0,.4),
                         0px 8px 13px rgba(0,0,0,.1);
+            
+            margin-bottom: .5rem;
 
             @media only screen and (max-width: $bp-largest) {
                 font-size: 2rem;
             }
 
             @media only screen and (max-width: $bp-medium) {
-                margin-bottom: .25rem;
+                margin-bottom: 0;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.5rem;
             }
 
         }
@@ -59,6 +69,10 @@
 
             @media only screen and (max-width: $bp-large) {
                 padding: 1.5rem 1.25rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                padding: 1.25rem 1rem;
             }
 
             &:hover {
