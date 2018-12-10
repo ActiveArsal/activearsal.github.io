@@ -30,6 +30,10 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.6; }
 
+.about {
+  background: var(--color-grey-light-3);
+  height: 70rem; }
+
 .landing {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.36)), url(../img/hero.jpg);
@@ -37,7 +41,7 @@ body {
   background-position: top;
   position: relative; }
   .landing__header {
-    width: 75%;
+    width: 85%;
     color: var(--color-grey-light-2);
     position: absolute;
     top: 50%;
@@ -85,7 +89,21 @@ body {
           padding: 1.25rem 1rem; } }
       .landing__header-button:hover {
         transform: scale(1.05); }
+        @media only screen and (max-width: 37.5em) {
+          .landing__header-button:hover {
+            transform: none; } }
       .landing__header-button:active {
         transform: translateY(2px) scale(1.05); }
+        @media only screen and (max-width: 37.5em) {
+          .landing__header-button:active {
+            transform: none; } }
       .landing__header-button:focus {
         outline: none; }
+
+.contact {
+  background: var(--color-grey-light-3);
+  height: 70rem; }
+
+.projects {
+  background: var(--color-grey-dark-1);
+  height: 70rem; }

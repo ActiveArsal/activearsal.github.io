@@ -10,7 +10,7 @@
     position: relative;
 
     &__header {
-        width: 75%;
+        width: 85%;
         color: var(--color-grey-light-2);
         position: absolute;
         top: 50%;
@@ -77,10 +77,18 @@
 
             &:hover {
                 transform: scale(1.05);
+
+                @media only screen and (max-width: $bp-small) {
+                    transform: none;
+                }
             }
 
             &:active {
                 transform: translateY(2px) scale(1.05);
+
+                @media only screen and (max-width: $bp-small) {
+                    transform: none;
+                }
             }
 
             &:focus {
