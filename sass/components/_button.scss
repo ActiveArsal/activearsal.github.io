@@ -1,0 +1,41 @@
+.button {
+    font-size: 1.75rem;
+    background: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+    color: #fff;
+
+    margin: 1rem;
+    padding: 2rem 1.75rem;
+    border-style: none;
+    border-radius: 30px;
+    box-shadow: var(--shadow-light);
+    transition: all .15s;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 1.5rem 1.25rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 1.25rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+
+        @media only screen and (max-width: $bp-small) {
+            transform: none;
+        }
+    }
+
+    &:active {
+        transform: translateY(2px) scale(1.05);
+
+        @media only screen and (max-width: $bp-small) {
+            transform: none;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

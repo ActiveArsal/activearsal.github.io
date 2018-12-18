@@ -128,35 +128,6 @@ body {
       @media only screen and (max-width: 37.5em) {
         .landing__header-subtext {
           font-size: 1.5rem; } }
-    .landing__header-button {
-      font-size: 1.75rem;
-      background: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
-      color: #fff;
-      margin: 1rem;
-      padding: 2rem 1.75rem;
-      border-style: none;
-      border-radius: 30px;
-      box-shadow: var(--shadow-light);
-      transition: all .15s; }
-      @media only screen and (max-width: 68.75em) {
-        .landing__header-button {
-          padding: 1.5rem 1.25rem; } }
-      @media only screen and (max-width: 37.5em) {
-        .landing__header-button {
-          padding: 1.25rem 1rem;
-          font-size: 1.5rem; } }
-      .landing__header-button:hover {
-        transform: scale(1.05); }
-        @media only screen and (max-width: 37.5em) {
-          .landing__header-button:hover {
-            transform: none; } }
-      .landing__header-button:active {
-        transform: translateY(2px) scale(1.05); }
-        @media only screen and (max-width: 37.5em) {
-          .landing__header-button:active {
-            transform: none; } }
-      .landing__header-button:focus {
-        outline: none; }
 
 .contact {
   background: radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(rgba(204, 204, 204, 0.9) 8px, transparent 8px) 0 -4px, linear-gradient(90deg, rgba(204, 204, 204, 0.9) 8px, transparent 8px) -4px 0;
@@ -167,3 +138,33 @@ body {
 .projects {
   background: var(--color-grey-dark-1);
   height: 70rem; }
+
+.button {
+  font-size: 1.75rem;
+  background: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  margin: 1rem;
+  padding: 2rem 1.75rem;
+  border-style: none;
+  border-radius: 30px;
+  box-shadow: var(--shadow-light);
+  transition: all .15s; }
+  @media only screen and (max-width: 68.75em) {
+    .button {
+      padding: 1.5rem 1.25rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .button {
+      padding: 1.25rem 1rem;
+      font-size: 1.5rem; } }
+  .button:hover {
+    transform: scale(1.05); }
+    @media only screen and (max-width: 37.5em) {
+      .button:hover {
+        transform: none; } }
+  .button:active {
+    transform: translateY(2px) scale(1.05); }
+    @media only screen and (max-width: 37.5em) {
+      .button:active {
+        transform: none; } }
+  .button:focus {
+    outline: none; }
