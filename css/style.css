@@ -78,6 +78,35 @@ body {
       @media only screen and (max-width: 37.5em) {
         .landing__header-subtext {
           font-size: 1.5rem; } }
+    .landing__header__icon-box {
+      margin: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .landing__header__icon-box {
+          margin: 1.5rem 1rem; } }
+      .landing__header__icon-box-item {
+        color: #fff;
+        font-size: 3rem;
+        margin: 0 3rem;
+        padding: 1.25rem 1.5rem;
+        background: #353535;
+        border-radius: 100%;
+        box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.5);
+        text-shadow: 0 0 20px #ffe01b;
+        transition: all .2s; }
+        @media only screen and (max-width: 75em) {
+          .landing__header__icon-box-item {
+            font-size: 2.5rem;
+            margin: 0 2rem;
+            padding: 1rem 1.25rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .landing__header__icon-box-item {
+            font-size: 2rem;
+            margin: 0 1.5rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .landing__header__icon-box-item {
+            font-size: 1.5rem; } }
+      .landing__header__icon-box-item:hover {
+        text-shadow: 0 0 20px #ffe01b, 0 0 20px #ffe01b, 0 0 20px #ffe01b, 0 0 20px #ffe01b, 0 0 20px #ffe01b; }
 
 .contact {
   background: radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(rgba(204, 204, 204, 0.9) 8px, transparent 8px) 0 -4px, linear-gradient(90deg, rgba(204, 204, 204, 0.9) 8px, transparent 8px) -4px 0;
@@ -95,7 +124,8 @@ body {
   width: 50%;
   text-align: center;
   background-color: rgba(249, 249, 249, 0.85);
-  color: #000; }
+  color: #000;
+  box-shadow: var(--shadow-medium); }
   @media only screen and (max-width: 68.75em) {
     .card {
       width: 60%;
