@@ -2,6 +2,7 @@
   --color-primary: rgb(255, 224, 27);
   --color-primary-light: #FDC830;
   --color-primary-dark: #F37335;
+  --color-primary-darkest: #d74f0d;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -150,7 +151,7 @@ body {
   background: radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(rgba(204, 204, 204, 0.9) 8px, transparent 8px) 0 -4px, linear-gradient(90deg, rgba(204, 204, 204, 0.9) 8px, transparent 8px) -4px 0;
   background-color: var(--color-grey-light-1);
   background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
-  height: 70rem; }
+  padding: 5rem 0; }
 
 .projects {
   background: var(--color-grey-dark-1);
@@ -211,6 +212,74 @@ body {
       .card-description {
         font-size: 1rem;
         width: 90%; } }
+
+.form {
+  background: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+  margin: 0 auto;
+  width: 45%;
+  color: #fff;
+  padding: 2rem;
+  box-shadow: var(--shadow-medium);
+  border-radius: 4px; }
+  @media only screen and (max-width: 75em) {
+    .form {
+      width: 60%; } }
+  @media only screen and (max-width: 56.25em) {
+    .form {
+      width: 75%; } }
+  @media only screen and (max-width: 37.5em) {
+    .form {
+      padding: 2rem;
+      width: 90%; } }
+  .form__header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0 1rem;
+    border-bottom: 1px solid #fff;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 56.25em) {
+      .form__header {
+        font-size: 2rem; } }
+  .form__item {
+    outline: none;
+    margin: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .form__item {
+        margin: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .form__item {
+        margin: 1.5rem 1rem; } }
+    .form__item-input {
+      border: none;
+      border-radius: 5px;
+      padding: 1rem;
+      width: 100%;
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+      font-size: 1.75rem; }
+      @media only screen and (max-width: 56.25em) {
+        .form__item-input {
+          font-size: 1.25rem; } }
+    .form__item-input:focus {
+      outline: none; }
+  .form__button {
+    color: #fff;
+    font-size: 1.75rem;
+    background: var(--color-primary-darkest);
+    padding: 1rem;
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow-light);
+    transition: all .15s; }
+    @media only screen and (max-width: 37.5em) {
+      .form__button {
+        font-size: 1.25rem; } }
+    .form__button:focus {
+      outline: none; }
 
 .button {
   font-size: 1.75rem;
