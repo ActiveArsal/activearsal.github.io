@@ -11,16 +11,16 @@
     // transition: .5s;
 
     @media only screen and (max-width: $bp-largest) {
-            margin: 1rem 4rem;
+        margin: 1rem 4rem;
     }
 
     
     @media only screen and (max-width: $bp-medium) {
-            margin: 1rem 2rem;
+        margin: 1rem 2rem;
     }
 
     @media only screen and (max-width: $bp-small) {
-            margin: 1rem;
+        margin: 1rem;
     }
     
     &:hover {

@@ -196,6 +196,9 @@ body {
   height: 12rem;
   background: black;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      height: 6rem; } }
   .footer-text {
     color: #fff;
     font-size: 1.5rem;
@@ -203,6 +206,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 56.25em) {
+      .footer-text {
+        font-size: 1.25rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer-text {
+        font-size: 1rem; } }
 
 .card {
   padding: 5rem;
