@@ -1,0 +1,14 @@
+.footer {
+    height: 12rem;
+    background: black;
+    position: relative;
+
+    &-text {
+        color: #fff;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
