@@ -1,5 +1,4 @@
 .projects {
-    // background: var(--color-grey-dark-1);
     background: #222;
     padding: 7rem 0;
 
@@ -43,6 +42,11 @@
                 font-weight: 700;
                 font-size: 1.5rem;
                 letter-spacing: .5px;
+                transition: all .2s;
+
+                &:hover {
+                    transform: scale(1.1) skewX(-10deg);
+                }
             }
 
             &-source,
@@ -51,6 +55,11 @@
                 color: #fff;
                 text-decoration: none;
                 font-size: 1.25rem;
+                transition: all .2s;
+
+                &:hover {
+                    transform: scale(1.2) skewX(-10deg);
+                }
             }
         }
     }
