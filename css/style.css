@@ -68,9 +68,9 @@ body {
       color: var(--color-primary-dark);
       font-size: 10rem;
       margin: 0 2rem;
-      transition: all .3s; }
+      transition: all .2s; }
       .about__icon-box-item:hover {
-        transform: skewX(-15deg) scale(1.1);
+        transform: skewX(-7deg) scale(1.2);
         text-shadow: var(--shadow-medium); }
       @media only screen and (max-width: 75em) {
         .about__icon-box-item {
@@ -269,7 +269,13 @@ body {
     margin-bottom: 1rem;
     border-bottom: 1px solid rgba(204, 204, 204, 0.8);
     margin: 0 auto;
-    width: 80%; }
+    width: 80%;
+    transition: all .2s; }
+    .card-header:hover {
+      transform: skew(5deg, 5deg) scale(1.1);
+      letter-spacing: 4px;
+      text-shadow: var(--shadow-medium);
+      border-bottom: 1px solid rgba(204, 204, 204, 0.1); }
     @media only screen and (max-width: 56.25em) {
       .card-header {
         font-size: 3rem; } }
@@ -422,12 +428,13 @@ body {
   font-size: 1.75rem;
   background: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
   color: #fff;
+  position: relative;
   margin: 1rem;
   padding: 2rem 1.75rem;
   border-style: none;
-  border-radius: 30px;
+  border-radius: 3rem;
   box-shadow: var(--shadow-light);
-  transition: all .15s; }
+  transition: all .4s; }
   @media only screen and (max-width: 68.75em) {
     .button {
       padding: 1.5rem 1.25rem; } }
@@ -437,14 +444,23 @@ body {
       font-size: 1.5rem;
       box-shadow: none; } }
   .button:hover {
-    transform: scale(1.05); }
-    @media only screen and (max-width: 37.5em) {
-      .button:hover {
-        transform: none; } }
-  .button:active {
-    transform: translateY(2px) scale(1.05); }
-    @media only screen and (max-width: 37.5em) {
-      .button:active {
-        transform: none; } }
-  .button:focus {
-    outline: none; }
+    transform: translateY(-3px); }
+    .button:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .button::after {
+    content: '';
+    background: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+  .button:active, .button:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
