@@ -1,5 +1,6 @@
 .projects {
-    background: var(--color-grey-dark-1);
+    // background: var(--color-grey-dark-1);
+    background: #222;
     padding: 7rem 0;
 
     @media only screen and (max-width: $bp-largest) {
@@ -34,9 +35,6 @@
             align-items: center;
             margin: 1rem 0;
 
-
-
-
             &-name,
             &-name:link,
             &-name:visited {
@@ -57,3 +55,4 @@
         }
     }
 }
+
