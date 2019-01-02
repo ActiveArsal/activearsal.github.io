@@ -399,6 +399,11 @@ body {
     border-bottom-right-radius: 10px;
     z-index: 1; }
 
+.iphone-1:before {
+  background: url(../img/phone-bg-1.jpg);
+  background-size: cover;
+  background-position: center; }
+
 .iphone-2:before {
   background: url(../img/phone-bg-2.png);
   background-size: cover;
