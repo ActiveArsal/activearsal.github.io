@@ -204,7 +204,7 @@ body {
           transform: scale(1.2) skewX(-10deg); }
 
 .footer {
-  height: 12rem;
+  padding: 12rem 0;
   background: black;
   position: relative;
   padding: 3rem 0;
@@ -212,7 +212,7 @@ body {
   flex-direction: column; }
   @media only screen and (max-width: 56.25em) {
     .footer {
-      height: 6rem; } }
+      padding: 4rem 0; } }
   .footer-text {
     color: #fff;
     font-size: 1.5rem;
