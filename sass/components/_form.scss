@@ -68,7 +68,7 @@
     &__button {
         color: #fff;
         font-size: 1.75rem;
-        background: var(--color-primary-darkest);
+        background: linear-gradient(to bottom right, var(--color-primary-dark), var(--color-primary-darkest));
 
         padding: 1rem;
         width: 40%;

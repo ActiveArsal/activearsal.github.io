@@ -26,7 +26,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -152,6 +153,29 @@ body {
       .landing__header__icon-box-item:hover {
         text-shadow: 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary); }
 
+.footer {
+  padding: 12rem 0;
+  background: black;
+  position: relative;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 4rem 0; } }
+  .footer-text {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 56.25em) {
+      .footer-text {
+        font-size: 1.25rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer-text {
+        font-size: 1rem; } }
+
 .contact {
   background: radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--color-grey-light-1) 20%, var(--color-grey-light-1) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(rgba(204, 204, 204, 0.9) 8px, transparent 8px) 0 -4px, linear-gradient(90deg, rgba(204, 204, 204, 0.9) 8px, transparent 8px) -4px 0;
   background-color: var(--color-grey-light-1);
@@ -203,28 +227,124 @@ body {
         .projects__grid__item-source:hover, .projects__grid__item-source:link:hover, .projects__grid__item-source:visited:hover {
           transform: scale(1.2) skewX(-10deg); }
 
-.footer {
-  padding: 12rem 0;
-  background: black;
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background: #353535;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer; }
+  @media only screen and (max-width: 68.75em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem;
+      height: 3rem;
+      width: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.9s cubic-bezier(0.29, 1.46, 0.99, 0.92); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: right;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  font-weight: 700;
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #353535 50%);
+  background-size: 220%;
+  transition: all .4s;
+  letter-spacing: 1px; }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #fff;
+  text-shadow: 0 0 10px var(--color-primary), 0 0 10px var(--color-primary), 0 0 10px var(--color-primary);
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__icon {
   position: relative;
-  padding: 3rem 0;
-  display: flex;
-  flex-direction: column; }
-  @media only screen and (max-width: 56.25em) {
-    .footer {
-      padding: 4rem 0; } }
-  .footer-text {
-    color: #fff;
-    font-size: 1.5rem;
-    margin: 0 auto;
-    text-align: center;
-    letter-spacing: 1px; }
-    @media only screen and (max-width: 56.25em) {
-      .footer-text {
-        font-size: 1.25rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .footer-text {
-        font-size: 1rem; } }
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary);
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all .25s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon {
+  box-shadow: 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary); }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem;
+  box-shadow: 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary); }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem;
+  box-shadow: 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
 
 .card {
   padding: 5rem;
@@ -346,7 +466,7 @@ body {
   .form__button {
     color: #fff;
     font-size: 1.75rem;
-    background: var(--color-primary-darkest);
+    background: linear-gradient(to bottom right, var(--color-primary-dark), var(--color-primary-darkest));
     padding: 1rem;
     width: 40%;
     margin-right: 30%;

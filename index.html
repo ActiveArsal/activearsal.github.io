@@ -11,9 +11,25 @@
 </head>
 <body>
 
-    <!-- <nav>
-
-    </nav> -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id='navi-toggle'>
+    
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+    
+        <!-- <div class="navigation__background">&nbsp;</div> -->
+    
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">Learn More</a></li>
+                <li class="navigation__item"><a href="#projects" class="navigation__link">View Projects</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+                <li class="navigation__item"><a href="#" onclick="window.open('resume.pdf')" class="navigation__link">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
     
     <main>
         <section class="landing" id='home'>
@@ -36,14 +52,10 @@
                 <p class="card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eius omnis illum nulla dolorem
                 eaque accusantium aut fuga repellat dolorum, rem maiores qui aliquam reprehenderit amet fugiat itaque. Soluta, eaque. Lorem ipsum 
                 eaque accusantium aut fuga repellat dolorum.</p>
-                <!-- <form method='get' action="resume.pdf">
-                    opens in same tab
-                    <button type='submit' class="button">Download Resume</button>
-                </form> -->
 
                 <button class='button' type="submit" onclick="window.open('resume.pdf')">Download Resume</button>
-                
             </div>
+
             <div class='about__icon-box'>
                 <span class="about__icon-box-item"><i class="fab fa-html5"></i></span>
                 <span class="about__icon-box-item"><i class="fab fa-css3-alt"></i></span>
