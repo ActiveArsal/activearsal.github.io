@@ -9,7 +9,7 @@
         width: 7rem;
         position: fixed;
         top: 6rem;
-        right: 6rem;
+        right: 4rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .3);
@@ -17,19 +17,19 @@
         cursor: pointer;
 
 
-        @media only screen and (max-width: $bp-large) {
-            // top: 4rem;
-            // right: 4rem;
-            // height: 3rem;
-            // width: 3rem;
+        @media only screen and (max-width: $bp-medium) {
+            height: 5rem;
+            width: 5rem;
+            top: 3rem;
+            right: 2rem;
         }
 
-        @media only screen and (max-width: $bp-small) {
-            // top: 3rem;
-            // right: 3rem;
-            // height: 3rem;
-            // width: 3rem;
-        }
+        // @media only screen and (max-width: $bp-small) {
+        //     height: 5rem;
+        //     width: 5rem;
+        //     top: 3rem;
+        //     right: 2rem;
+        // }
     }
 
     &__nav {
@@ -50,7 +50,7 @@
         @media only screen and (max-width: $bp-small) {
             background-image: linear-gradient(to left,
                                 rgba(0, 0, 0, 0.6) 0%, 
-                                rgba(0, 0, 0, 0) 60%);
+                                rgba(0, 0, 0, 0) 50%);
         }
 
 
@@ -147,6 +147,10 @@
     &__icon {
         position: relative;
         margin-top: 3.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 2.5rem;
+        }
         &,
         &::before,
         &::after {
@@ -159,6 +163,10 @@
             display: inline-block;
         }
 
+        @media only screen and (max-width: $bp-medium) {
+            width: 2.5rem;
+        }
+
         &::before,
         &::after {
             content: '';
@@ -166,6 +174,9 @@
             left: 0;
             transition: all .25s;
 
+            @media only screen and (max-width: $bp-medium) {
+                width: 2.5rem;
+            }
         }
 
         &::before { top: -.8rem; }

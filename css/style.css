@@ -236,12 +236,18 @@ body {
   width: 7rem;
   position: fixed;
   top: 6rem;
-  right: 6rem;
+  right: 4rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
   text-align: center;
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__button {
+      height: 5rem;
+      width: 5rem;
+      top: 3rem;
+      right: 2rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -258,7 +264,7 @@ body {
       background-image: linear-gradient(to left, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 30%); } }
   @media only screen and (max-width: 37.5em) {
     .navigation__nav {
-      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%); } }
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%); } }
 
 .navigation__list {
   position: absolute;
@@ -315,17 +321,26 @@ body {
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__icon {
+      margin-top: 2.5rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
     background-color: #fff;
     box-shadow: 0 0 20px var(--color-primary), 0 0 20px var(--color-primary), 0 0 20px var(--color-primary);
     display: inline-block; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__icon {
+      width: 2.5rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: '';
     position: absolute;
     left: 0;
     transition: all .25s; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__icon::before, .navigation__icon::after {
+        width: 2.5rem; } }
   .navigation__icon::before {
     top: -.8rem; }
   .navigation__icon::after {
