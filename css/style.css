@@ -277,11 +277,11 @@ body {
 
 .navigation__link:link, .navigation__link:visited {
   font-weight: 700;
-  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.4), 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.4), 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.4);
   display: inline-block;
   font-size: 3rem;
   padding: 1rem 2rem;
-  color: var(--color-primary-dark);
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #353535 50%);
@@ -295,7 +295,7 @@ body {
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #fff;
-  text-shadow: 0 0 10px var(--color-primary), 0 0 10px var(--color-primary), 0 0 10px var(--color-primary);
+  text-shadow: 0 0 10px var(--color-primary), 0 0 10px var(--color-primary), 0 0 10px var(--color-primary), 0 0 10px var(--color-primary);
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
