@@ -18,30 +18,37 @@
 
 
         @media only screen and (max-width: $bp-large) {
-            top: 4rem;
-            right: 4rem;
-            height: 3rem;
-            width: 3rem;
+            // top: 4rem;
+            // right: 4rem;
+            // height: 3rem;
+            // width: 3rem;
         }
 
         @media only screen and (max-width: $bp-small) {
-            top: 3rem;
-            right: 3rem;
+            // top: 3rem;
+            // right: 3rem;
             // height: 3rem;
             // width: 3rem;
         }
     }
 
     &__nav {
+        // background: red;
+        background-image: linear-gradient(to left,
+                                rgba(0, 0, 0, 0.55) 0%, 
+                                rgba(0, 0, 0, 0) 25%);
         height: 100vh;
         position: fixed;
+        // top: 0;
+        // left: 0;
         top: 0;
-        left: 0;
+        right: 0;
         z-index: 1500;
 
         opacity: 0;
         width: 0;
-        transition: all .9s cubic-bezier(.29,1.46,.99,.92) ;
+        // transition: all .9s cubic-bezier(.29,1.46,.99,.92) ;
+        transition: all .6s;
     }
 
     &__list {
@@ -62,9 +69,7 @@
     &__link {
         &:link,
         &:visited {
-            font-weight: 700;
-            // color: var(--color-primary-dark);
-            // text-shadow: .5rem .5rem 1rem rgba(0,0,0,.15);
+            letter-spacing: 1px;
             color: #fff;
             text-shadow: .25rem .25rem 1rem rgba(0,0,0,.4),
                         .25rem .25rem 1rem rgba(0,0,0,.4),
@@ -78,13 +83,11 @@
                                 transparent 0%,
                                 transparent 50%,
                                 #353535 50%);
-            // background-size: 220%;
             background-size: 230%;
             transition: all .45s;
-            letter-spacing: 1px;
 
                 span {
-                    margin-right: 1.5rem;
+                    margin-right: 1rem;
                     display: inline-block;
                 }
             }
@@ -92,7 +95,6 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: #fff;
             text-shadow: 0 0 10px var(--color-primary),
                         0 0 10px var(--color-primary),
                         0 0 10px var(--color-primary),
