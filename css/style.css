@@ -245,7 +245,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .card {
       width: 100%;
-      padding: 2rem;
+      padding: 2rem 2rem 1rem;
       background: none;
       box-shadow: none; } }
   .card-image {
@@ -446,7 +446,8 @@ body {
     .button {
       padding: 1.25rem 1rem;
       font-size: 1.5rem;
-      box-shadow: none; } }
+      box-shadow: none;
+      margin: 0 0 1rem; } }
   .button:hover {
     transform: translateY(-3px); }
     .button:hover::after {
