@@ -157,9 +157,8 @@
             width: 3rem;
             height: 2px;
             background-color: #fff;
-            box-shadow: 0 0 20px var(--color-primary),
-                        0 0 20px var(--color-primary),
-                        0 0 20px var(--color-primary);
+            box-shadow: 0 0 15px var(--color-primary),
+                        0 0 15px var(--color-primary);
             display: inline-block;
         }
 
@@ -185,25 +184,22 @@
     }
 
     &__button:hover &__icon {
-        box-shadow: 0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary);
+        box-shadow: 0 0 15px var(--color-primary),
+                    0 0 15px var(--color-primary),
+                    0 0 15px var(--color-primary);
     }
 
     &__button:hover &__icon::before {
         top: -1rem;
-        box-shadow: 0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary);
+        box-shadow: 0 0 15px var(--color-primary),
+                    0 0 15px var(--color-primary),
+                    0 0 15px var(--color-primary);
     }
     &__button:hover &__icon::after {
         top: 1rem;
-        box-shadow: 0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary);
+        box-shadow: 0 0 15px var(--color-primary),
+                    0 0 15px var(--color-primary),
+                    0 0 15px var(--color-primary);
     }
 
 
