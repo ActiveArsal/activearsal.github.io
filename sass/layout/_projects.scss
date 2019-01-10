@@ -1,5 +1,9 @@
 .projects {
-    background: #222;
+    // background: #222;
+    // background: #000;
+    background-image: linear-gradient(    
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.91));
     padding: 6rem 0;
 
     @media only screen and (max-width: $bp-largest) {
