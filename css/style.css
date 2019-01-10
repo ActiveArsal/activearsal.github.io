@@ -562,7 +562,7 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     z-index: 1;
-    box-shadow: inset 0 -1px 2px -1px rgba(0, 0, 0, 0.4); }
+    box-shadow: inset 0 -1px 5px -1px rgba(0, 0, 0, 0.2); }
 
 .iphone-1 .iphone-screen {
   background: url(../img/phone-bg-1.jpg);
