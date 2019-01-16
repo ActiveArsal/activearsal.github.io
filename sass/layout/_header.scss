@@ -8,6 +8,8 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    animation: imageAnimation 1s linear;
+    
 
     &__header {
         width: 85%;
@@ -18,12 +20,15 @@
         transform: translate(-50%, -50%);
         text-align: center;
         letter-spacing: 1px;
+        
 
         &-text {
             font-size: 6rem;
             text-shadow: 0px 4px 3px rgba(0,0,0,.4),
                         0px 8px 13px rgba(0,0,0,.1),
                         0px 18px 23px rgba(0,0,0,.1);
+
+            animation: moveInLeft 1.1s ease-out;
 
             @media only screen and (max-width: $bp-largest) {
                 font-size: 4rem;
@@ -40,6 +45,7 @@
             text-shadow: 0px 4px 3px rgba(0,0,0,.4),
                         0px 8px 13px rgba(0,0,0,.1);
             
+            animation: moveInRight 1.1s ease-out;
 
             @media only screen and (max-width: $bp-largest) {
                 font-size: 2rem;
@@ -57,6 +63,7 @@
 
         &__icon-box {
             margin: 2rem;
+            animation: moveInBottom 1.1s ease-out;
 
             @media only screen and (max-width: $bp-small) {
                 margin: 1.5rem 1rem;
@@ -73,6 +80,7 @@
                                     0 2px 5px rgba(0, 0, 0, .5);
                 text-shadow: 0 0 15px var(--color-primary);
 
+                animation: iconLights 1s linear;
                 transition: all .4s;
 
                 @media only screen and (max-width: $bp-largest) {

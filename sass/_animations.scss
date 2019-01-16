@@ -1,0 +1,76 @@
+@keyframes imageAnimation {
+    0% {
+        background-image: linear-gradient(    
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.41)),
+            url(../img/hero.jpg);
+        opacity: 0; 
+    }
+
+
+    60% {
+        background-image: linear-gradient(    
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.41)),
+            url(../img/hero.jpg);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-9rem);
+    }
+
+    80% {
+        transform: translate(.75rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(9rem);
+    }
+
+    80% {
+        transform: translate(-.75rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    80% {
+        transform: translateY(-.25rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes iconLights {
+    0% {
+        text-shadow: none;
+    }
+
+    80% {
+        text-shadow: 0 0 15px var(--color-primary);
+    }
+}
