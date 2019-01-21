@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Home to my most recent development projects.">
+    <meta name="keywords" content="Development, Design, Web, Mobile, App">
+    <meta name="author" content="Arsal Mehran">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -10,13 +13,12 @@
 	<title>Arsal Mehran</title>
 </head>
 <body>
+    <!-- NAVIGATION -->
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id='navi-toggle'>
-    
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-    
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
@@ -29,6 +31,7 @@
     </div>
     
     <main>
+        <!-- LANDING SECTION -->
         <section class="landing" id='home'>
             <header class="landing__header">
                 <h1 class="landing__header-text">Arsal Mehran</h1>
@@ -40,13 +43,13 @@
                 </div>
             </header>
         </section>
-
+        <!-- ABOUT SECTION -->
         <section class="about" id='about'>
             <div class="card">
                 <img src="./img/needle.jpg" alt="profile pic" class="card-image">
                 <h2 class='card-header'>About Me</h2>
                 <p class="card-description">Working primarily in the MERN stack (MongoDB, Express.js, React, Node.js), my projects feature
-                the most cutting edge and modern designs, ensuring a good user experience across all platforms with the addition of RESTful APIs.
+                the most cutting edge and modern designs, ensuring a good user experience and performance across all platforms.
                 </p>
                 <button class='button' type="submit" onclick="window.open('resume.pdf')">Download Resume</button>
             </div>
@@ -59,9 +62,10 @@
                 <span class="about__icon-box-item"><i class="fab fa-node"></i></span>
             </div>
         </section>
-
+        <!-- PROJECTS SECTION -->
         <section class='projects' id='projects'>
             <div class="projects__grid">
+                <!-- PROJECT ITEM -->
                 <div class="projects__grid__item">
                     <div class="iphone iphone-1">
                         <div class="iphone-screen">
@@ -73,6 +77,7 @@
                     <a href="https:activearsal.github.io/" class="projects__grid__item-name"test >View Project</a>
                     <a href="https://github.com/ActiveArsal/activearsal.github.io" class="projects__grid__item-source"test >Repository</a>
                 </div>
+                <!-- PROJECT ITEM -->
                 <div class="projects__grid__item">
                     <div class="iphone iphone-2">
                         <div class="iphone-screen">
@@ -84,6 +89,7 @@
                     <a href="https://gentle-ocean-43456.herokuapp.com/" class="projects__grid__item-name"test >View Project</a>
                     <a href="https://github.com/ActiveArsal/smartbrainapp" class="projects__grid__item-source"test >Repository</a>
                 </div>
+                <!-- PROJECT ITEM -->
                 <div class="projects__grid__item">
                     <div class="iphone iphone-3">
                         <div class="iphone-screen">
@@ -95,28 +101,31 @@
                     <a href="https://activearsal.github.io/natours/" class="projects__grid__item-name"test >View Project</a>
                     <a href="https://github.com/ActiveArsal/natours" class="projects__grid__item-source"test >Repository</a>
                 </div>
-                    <div class="projects__grid__item">
-                        <div class="iphone iphone-6">
-                            <div class="iphone-screen">
-                                <div class="iphone-screen-title">
-                                    <h3 class="iphone-screen-title-text">React.js</h3>
-                                </div>
+                <!-- PROJECT ITEM -->
+                <div class="projects__grid__item">
+                    <div class="iphone iphone-6">
+                        <div class="iphone-screen">
+                            <div class="iphone-screen-title">
+                                <h3 class="iphone-screen-title-text">React.js</h3>
                             </div>
                         </div>
-                        <a href="https://morning-mountain-89515.herokuapp.com/" class="projects__grid__item-name" test>View Project</a>
-                        <a href="https://github.com/ActiveArsal/practiceReact" class="projects__grid__item-source" test>Repository</a>
                     </div>
-                    <div class="projects__grid__item">
-                        <div class="iphone iphone-4">
-                            <div class="iphone-screen">
-                                <div class="iphone-screen-title">
-                                    <h3 class="iphone-screen-title-text">Node.js Express.js MongoDB</h3>
-                                </div>
+                    <a href="https://morning-mountain-89515.herokuapp.com/" class="projects__grid__item-name" test>View Project</a>
+                    <a href="https://github.com/ActiveArsal/practiceReact" class="projects__grid__item-source" test>Repository</a>
+                </div>
+                <!-- PROJECT ITEM -->
+                <div class="projects__grid__item">
+                    <div class="iphone iphone-4">
+                        <div class="iphone-screen">
+                            <div class="iphone-screen-title">
+                                <h3 class="iphone-screen-title-text">Node.js Express.js MongoDB</h3>
                             </div>
                         </div>
-                        <a href="https://stark-forest-60644.herokuapp.com/blogs/" class="projects__grid__item-name" test>View Project</a>
-                        <a href="https://github.com/ActiveArsal/blog-app" class="projects__grid__item-source" test>Repository</a>
                     </div>
+                    <a href="https://stark-forest-60644.herokuapp.com/blogs/" class="projects__grid__item-name" test>View Project</a>
+                    <a href="https://github.com/ActiveArsal/blog-app" class="projects__grid__item-source" test>Repository</a>
+                </div>
+                <!-- PROJECT ITEM -->
                 <div class="projects__grid__item">
                     <div class="iphone iphone-5">
                         <div class="iphone-screen">
@@ -128,10 +137,9 @@
                     <a href="https://activearsal.github.io/space/" class="projects__grid__item-name"test >View Project</a>
                     <a href="https://github.com/ActiveArsal/space" class="projects__grid__item-source"test >Repository</a>
                 </div>
-                
             </div>
         </section>
-
+        <!-- CONTACT SECTION -->
         <section class="contact" id='contact'>
             <form class="form" method='POST' action='https://formspree.io/arsalmehran@gmail.com'>
                 <h2 class="form__header">Contact Me</h2>
@@ -148,7 +156,7 @@
             </form>
         </section>        
     </main>
-
+    <!-- FOOTER -->
     <footer class="footer">
         <h3 class="footer-text">Copyright &copy; 2019</h3>
         <h3 class="footer-text">arsalmehran@gmail.com</h3>
