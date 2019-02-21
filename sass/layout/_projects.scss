@@ -15,8 +15,9 @@
     }
 
     &__grid {
-        padding: 1rem 20rem;
-        justify-content: space-evenly;
+        padding: 1rem 15rem;
+        // justify-content: space-evenly;
+        justify-content: space-around;
         display: flex;
         flex-wrap: wrap;
 
@@ -28,7 +29,7 @@
             padding: 1rem 4rem;
         }
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-medium) {
             padding: 1rem;
         }
 
