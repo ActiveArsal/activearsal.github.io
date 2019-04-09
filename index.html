@@ -6,7 +6,8 @@
     <meta name="Description" content="Portfolio for my Web Development projects.">
     <meta name="keywords" content="Development, Design, Web, Mobile, App, JavaScript, React, Node.js">
     <meta name="author" content="Arsal Mehran">
-    <meta name="theme-color" content="#F37335">
+    <!-- <meta name="theme-color" content="#F37335"> -->
+    <meta name="theme-color" content="#f79f75">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -157,12 +158,15 @@
             <form class="form" method='POST' action='https://formspree.io/arsalmehran@gmail.com'>
                 <h2 class="form__header">Contact Me</h2>
                 <div class="form__item">
+                    <label for="name" style='display: none'>Name</label>
                     <input class='form__item-input' type="text" name="name" placeholder="Name" required>
                 </div>
                 <div class="form__item">
+                    <label for="email" style="display: none">Email</label>
                     <input class='form__item-input' type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form__item">
+                    <label for='message' style='display: none'>Message</label>
                     <textarea class='form__item-input' name="message" placeholder="Message" rows='10' required></textarea>
                 </div>
                 <button type="submit" class="form__button">Submit</button>
