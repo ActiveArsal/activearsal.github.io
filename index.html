@@ -55,16 +55,16 @@
         <section class="about" id='about'>
             <div class="card">
                 <!-- <img src="./img/needle.jpg" alt="profile pic" class="card-image"> -->
-                <img src="./img/self.jpg" alt="profile pic" class="card-image">
+                <img src="./img/IMG-20210311-WA0008_1.jpg" alt="profile pic" class="card-image">
                 <h2 class='card-header'>About Me</h2>
                 <!-- <p class="card-description">Working primarily in the MERN stack (MongoDB, Express.js, React, Node.js), my projects feature
                 the most cutting edge and modern designs, ensuring a good user experience and performance across all platforms.
                 </p> -->
-                <p class="card-description">Frontend Engineer exploring new technology, with strengths in MERN stack (MongoDB, Express.js, React, Node.js). Several
+                <p class="card-description">Software Engineer exploring new technology, with strengths in MERN stack (MongoDB, Express.js, React, Node.js). Several
                 of my projects use cutting edge designs, with an emphasis on writing reusable code, optimized for performance. I am
                 active in Game development as well, working with the Unity Engine and programming in C#.
                 </p>
-                <button class='button' type="submit" onclick="window.open('ArsalResume.pdf')">Download Resume</button>
+                <button class='button' type="submit" onclick="window.open('Arsal_Mehran_resume.pdf')">Download Resume</button>
             </div>
             <div class='about__icon-box'>
                 <span class="about__icon-box-item"><i class="fab fa-html5"></i></span>
@@ -130,7 +130,7 @@
                     <a href="https://arsalmehran.com/quote-generator/" class="projects__grid__item-name" test>View Project</a>
                     <a href="https://github.com/ActiveArsal/quote-generator" class="projects__grid__item-source" test>Repository</a>
                 </div>
-                <!-- PROJECT ITEM -->
+                <!-- PROJECT ITEM
                 <div class="projects__grid__item">
                     <div class="iphone iphone-4">
                         <div class="iphone-screen">
@@ -140,9 +140,9 @@
                         </div>
                     </div>
                     <!-- <a href="https://stark-forest-60644.herokuapp.com/blogs/" class="projects__grid__item-name" test>View Project</a> -->
-                    <a href="https://stark-forest-60644.herokuapp.com/blogs/" class="projects__grid__item-name" test>View Project</a>
+                    <!-- <a href="https://stark-forest-60644.herokuapp.com/blogs/" class="projects__grid__item-name" test>View Project</a>
                     <a href="https://github.com/ActiveArsal/blog-app" class="projects__grid__item-source" test>Repository</a>
-                </div>
+                </div> --> -->
                 <!-- PROJECT ITEM -->
                 <div class="projects__grid__item">
                     <div class="iphone iphone-5">
@@ -180,8 +180,13 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-        <h3 class="footer-text">Copyright &copy; 2020</h3>
+        <h3 class="footer-text">Copyright &copy; <span id='year'>year</span></h3>
         <h3 class="footer-text">arsalmehran@gmail.com</h3>
     </footer>
+
+    <script>
+        var year = document.getElementById('year');
+        year.innerHTML = new Date().getFullYear(); 
+    </script>
 </body>
 </html>
