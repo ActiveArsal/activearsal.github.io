@@ -19,7 +19,7 @@
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
-    "node-sass": "^4.9.4",
+    "node-sass": "^7.0.0",
     "postcss-cli": "^4.1.1"
   },
   "bugs": {
